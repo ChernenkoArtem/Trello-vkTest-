@@ -1,0 +1,25 @@
+.ColumnList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ebecf0;
+    width: 100%;
+    height: fit-content;
+    max-width: 300px;
+    border-radius: 5px;
+    margin: 0 4px;
+    padding: 10px 15px;
+}
+.addCard {
+    width: 100%;
+}
+.addCard__hover:hover {
+    background-color: rgba(9,30,66,.08);
+    color: #172b4d;
+    cursor: pointer;
+}
+.ColumnList h2{
+    margin: 0;
+    padding: 10px 8px;
+    width: 100%;
+}

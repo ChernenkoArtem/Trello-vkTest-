@@ -1,0 +1,42 @@
+.TextArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ebecf0;
+    width: 100%;
+    height: fit-content;
+    max-width: 300px;
+    border-radius: 5px;
+    margin: 0 4px;
+    padding: 10px 15px;
+}
+.TextArea textarea {
+    overflow: hidden;
+    overflow-wrap: break-word;
+    height: 30px;
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: none;
+    font-weight: 600;
+    min-height: 20px;
+    padding: 4px 8px;
+    resize: vertical;
+    width: 100%;
+    max-height: 256px;
+}
+.TextArea .btnAddCard , .btnCloseCard{
+    background-color: #5aac44;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 8px 4px 0 0;
+    padding: 6px 12px;
+    text-align: center;
+    color: #fff;
+}
+.btnCloseCard {
+    background-color: lightslategrey;
+}
