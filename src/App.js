@@ -1,14 +1,16 @@
 import React from 'react';
 import './App.css';
-import ColumnList from "./components/ColumnList/ColumnList"
+import Layout from "./hoc/Layout/Layout"
 import AddNewColumn from "./components/AddNewColumn/AddNewColumn"
 
-function App() {
 
+function App() {
   return (
     <div className="App">
-      <ColumnList/>
-      <AddNewColumn/>
+      <Layout>
+        <AddNewColumn/>
+      </Layout>
+
     </div>
   );
 }

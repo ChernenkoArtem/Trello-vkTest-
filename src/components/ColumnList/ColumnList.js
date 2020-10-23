@@ -15,7 +15,7 @@ export default class ColumnList extends Component {
     currentTextCard:'',
     column: {
       cardText:[],
-      columnTitle:''
+      columnTitle: this.props.columnTitle
     }
   }
   toggleCardHandler = ()=> {
@@ -29,6 +29,7 @@ export default class ColumnList extends Component {
     this.setState({
       currentTextCard: e.target.value
     })
+    console.log(this.state.currentTextCard)
   }
 
   addCardHandler =()=> {
@@ -63,6 +64,7 @@ export default class ColumnList extends Component {
         columnTitle: e.target.value
       }
     })
+    console.log(this.state.column.columnTitle)
   }
   addColumnListTitle =()=> {
     let titleText = this.state.column.columnTitle

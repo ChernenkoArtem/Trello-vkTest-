@@ -7,7 +7,7 @@ const TextArea =(props)=> {
       <textarea onBlur={props.focusOff} onChange={props.onChangeArea} value={props.texAreaValue}  placeholder={props.areaPlaceholder}></textarea>
       { props.isButtonNeed
         ?
-      <div>
+      <div style={{display:"flex",width: "max-content"}}>
         <button className={'btnAddCard'} onClick={props.btnClickAdd}>{props.btnAddCardValue}</button>
         <button className={'btnCloseCard'} onClick={props.btnClickClose}>{props.btnCloseCardValue}</button>
       </div>
